@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/804dd7d42c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           <nav>
+            <img src="images/kacademy logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#aim">Aim</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+           </nav> 
+           <div class="header-text">
+            <p>beginner front-end developer</p>
+            <h1>Kolade Adepoju from Nigeria</h1>
+           </div>
+        </div>
+    </div>
+    <!----------about------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>My name is Kolade Adepoju, and I am a student at the African Leadership University pursuing a Bachelor's degree in Software Engineering. I have a strong interest in mental health, believing that technology can play a crucial role in improving mental well-being through innovative solutions and accessible resources. Additionally, I am passionate about addressing the impacts of climate change and global warming on our environment. I aim to leverage my skills in software engineering to develop applications that promote sustainability, raise awareness, and encourage eco-friendly practices. By combining my interests in mental health and environmental sustainability, I aspire to contribute to a healthier planet and a more supportive society.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Fundamental Software development skills</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Creative and Analytical skills</span><br>Photography, Photo editing, Critical Thinking</li>
+                            <li><span>Research Analyst</span><br>Data entry specialist</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - 2027</span><br>Student of Software engineering at African Leadership University</li>
+                            <li><span>2023 - present</span><br>Model for various streetwear branda</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017 - 2022</span><br>African International College</li>
+                            <li><span>2022 - 2024</span><br>Beautiful Beginning Academy</li>
+                            <li><span>2024 - present</span><br>African Leadership University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------services------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code-commit"></i>
+                    <h2>Web Design</h2>
+                    <p>Basic HTML, CSS and JavaScript</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shirt"></i>
+                    <h2>Model</h3>
+                    <p>Model for runways, photoshoots, streetwear</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-person-circle-check"></i>
+                    <h2>Research Analyst</h2>
+                    <p>collects and analyzes data to provide insights that inform decision-making within an organization.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------portfolio------- -->
+     <div id="aim">
+        <div class="container">
+            <h1 class="sub-title">My aim</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Interest1.png">
+                    <div class="layer">
+                        <h3>Climate Change and global Warming</h3>
+                        <p>To leverage software engineering to combat climate change and global warming by developing innovative applications that raise awareness and promote sustainable practices. Through data analysis, educational tools, and user-friendly platforms, I seek to empower individuals and organizations to make informed decisions that contribute to environmental preservation and climate action.
+
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/images2.png">
+                    <div class="layer">
+                        <h3>Mental health</h3>
+                        <p>
+                            I aim to use software engineering to improve mental health by creating applications that provide accessible resources, support, and tools for individuals seeking help. By developing platforms for therapy, mindfulness, and community engagement, I hope to enhance awareness and reduce the stigma surrounding mental health, making it easier for people to prioritize their well-being.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- ----------contact--------- -->
+      <div id="contact">
+        <div class="container">
+           <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-regular fa-envelope"></i> koladeadepoju37@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +2348145494452, +250793895710</p>
+                <div class="social-icons">
+                    <a href="linkedin.com/in/kolade-adepoju-357b7331b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/iamadarkskinyorubaboy/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/CV-kolade Adepoju (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+           </div> 
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Kolade Adepoju.</p>
+        </div>
+      </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            
+            // Set the active link and tab
+            document.querySelector(`.tab-links[onclick="opentab('${tabname}')"]`).classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw_Ly_sWDe8i9TfWIUwEh0uK6kK6nAAXgWWqzafJs9HNM1EdVh6iIspURXPCtZaf4ZzQw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                 msg.innerHTML = "Message sent successfully"
+                 setTimeout(function(){
+                    msg.innerHTML = ""
+                 },5000)
+                 form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
